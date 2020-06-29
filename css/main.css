@@ -93,6 +93,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
+  color: white;
+  margin: 20%;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -101,17 +105,27 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
 }
+
+.header-divider {
+  width:100%;
+}
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 60%;
+  
 }
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 45%;
+  font-size: 1.5em;
+  color: white;
+  background-color: #202322;
 }
 
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -123,14 +137,22 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
 
-.hero-area {
-  display: flex;
-  justify-content: center;
+.hero-area 
+.content-wrapper 
+.hero-text {
+  display:flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image{
+    width:100%;
+  height: 15%;
 }
 
 /* Aside */
@@ -141,28 +163,49 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-
-/* Features */
-
-.features {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.features .features-items {
+/* Main */
+main .newsletter {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+/* Features */
+
+main .features  {
+  width: 60%;
+  margin: 15%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+  
+}
+main .features-content {
+  width: 60%;
+  margin: 15%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+  
+}
+
 
 /* Reviews */
 
-.reviews {
+.reviews-content h1, h2, p {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-flow: row wrap;
+  margin: 15%;
+}
+.reviews-img{
+  width:90%;
+  height:10%;
+}
+header .content-wrapper, .features p, footer p{
+magin: 0;
 }
 
 /* ==========================================================================
