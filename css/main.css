@@ -86,6 +86,78 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   /* General Styles */
+ 
+html {
+  font-size: 16px;
+	
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
+ 
+}
+ 
+ul, 
+ol {
+  list-style-type: none;
+ 
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+	
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75em;
+  
+  font-weight: 500;
+ 
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25em;
+  margin: 20px 0;
+  font-weight: 500;
+ 
+}
+ 
+p {
+  font-size: 1em;
+  line-height: 1.285;
+	
+}
+ 
+img {
+ width: 100%;
+}
+ 
+figure {
+ margin: 0;
+}
+ 
+address {
+ font-style: normal;
+}
+ 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
    .content-wrapper {
     width: 90%;
     margin: 50px 0;
@@ -97,6 +169,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322
 }
 
 header {
@@ -164,11 +237,27 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area  {
+  background: url(../assets/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500; 
+  line-height: 1.2; 
+}
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 /* Aside */
 
 aside {
@@ -176,10 +265,39 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 /* Features */
 
 .features {
+  background-image: url('../assets/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -212,6 +330,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -228,13 +347,15 @@ aside {
    ========================================================================== */
 
    .mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+     background-color: #527158;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
   }
   
   .contact-section {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,12 +366,28 @@ aside {
     margin: 0;
   }
 
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%;
+    overflow: hidden;
+    position: relative;
+  }
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
 
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
 
    .faq {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,6 +409,10 @@ aside {
   .faq-content {
     margin-bottom: 50px;
   }
+
+  /* ===================================================
+  Form ================================================*/
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
